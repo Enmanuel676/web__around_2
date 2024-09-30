@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alrededor de los EEUU</title>
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="icon" href="./images/favicon.png" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          src="./images/header-logo.png"
+          alt="Header-Logo"
+          class="header__logo"
+        />
+        <p class="header__line"></p>
+      </header>
+      <main class="main">
+        <div class="profile">
+          <img
+            src="./images/profile-avatar.png"
+            class="profile__avatar"
+            alt="Profile-Avatar"
+          />
+          <div class="profile__info">
+            <h1 class="profile__info-name">Jacques Cousteau</h1>
+
+            <button class="profile__info-link"></button>
+
+            <p class="profile__info-description">Explorador</p>
+          </div>
+          <button class="profile__info_add"></button>
+        </div>
+
+        <div class="edit">
+          <button class="edit__exit"></button>
+
+          <form class="edit__profile" id="form">
+            <h2 class="edit__profile_title"></h2>
+            <input
+              type="text"
+              class="edit__content"
+              placeholder="Nombre"
+              id="name"
+              required
+            />
+            <p class="edit__line"></p>
+            <input
+              type="text"
+              class="edit__content edit__content_description"
+              placeholder="Acerca de mí"
+              id="description"
+            />
+
+            <p class="edit__line"></p>
+            <button class="edit__save" type="submit" id="button">
+              Guardar
+            </button>
+          </form>
+        </div>
+        <div class="add__card">
+          <button class="cards__exit"></button>
+          <form id="cards" class="cards">
+            <h2 class="cards__title">Nueva Trajeta</h2>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              class="card__content"
+              placeholder="Título"
+            />
+            <p class="edit__line"></p>
+            <input
+              type="text"
+              name="url"
+              id="url"
+              class="card__content card__link"
+              placeholder="URL"
+            />
+            <p class="edit__line"></p>
+
+            <button class="card__save" type="submit" id="save">Guardar</button>
+          </form>
+        </div>
+        <div class="grid"></div>
+        <template id="template">
+          <div class="grid__card">
+            <div class="card__image">
+              <button class="card__delete"></button>
+              <img src="" alt="" class="grid__image" />
+            </div>
+            <h3 class="grid__name"></h3>
+            <button class="grid__like"></button>
+          </div>
+        </template>
+        <div class="image__card" id="image-card">
+          <button class="image__close"></button>
+          <img src="" alt="" class="image__show" id="image-show" />
+          <p class="image__name"></p>
+        </div>
+      </main>
+      <footer class="footer">
+        <p class="footer__paragraph">© 2024 Around The U.S.</p>
+      </footer>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
